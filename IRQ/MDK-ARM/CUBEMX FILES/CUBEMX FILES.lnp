@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"cubemx files\startup_stm32f103xb.o"
+"cubemx files\main.o"
+"cubemx files\stm32f1xx_it.o"
+"cubemx files\stm32f1xx_hal_msp.o"
+"cubemx files\stm32f1xx_hal_gpio_ex.o"
+"cubemx files\stm32f1xx_hal_tim.o"
+"cubemx files\stm32f1xx_hal_tim_ex.o"
+"cubemx files\stm32f1xx_hal.o"
+"cubemx files\stm32f1xx_hal_rcc.o"
+"cubemx files\stm32f1xx_hal_rcc_ex.o"
+"cubemx files\stm32f1xx_hal_gpio.o"
+"cubemx files\stm32f1xx_hal_dma.o"
+"cubemx files\stm32f1xx_hal_cortex.o"
+"cubemx files\stm32f1xx_hal_pwr.o"
+"cubemx files\stm32f1xx_hal_flash.o"
+"cubemx files\stm32f1xx_hal_flash_ex.o"
+"cubemx files\stm32f1xx_hal_exti.o"
+"cubemx files\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "CUBEMX FILES\CUBEMX FILES.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CUBEMX FILES.map" -o "CUBEMX FILES\CUBEMX FILES.axf"

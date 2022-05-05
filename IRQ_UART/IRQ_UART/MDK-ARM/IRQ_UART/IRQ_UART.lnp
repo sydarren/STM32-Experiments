@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"irq_uart\startup_stm32f103xb.o"
+"irq_uart\main.o"
+"irq_uart\stm32f1xx_it.o"
+"irq_uart\stm32f1xx_hal_msp.o"
+"irq_uart\stm32f1xx_hal_gpio_ex.o"
+"irq_uart\stm32f1xx_hal_tim.o"
+"irq_uart\stm32f1xx_hal_tim_ex.o"
+"irq_uart\stm32f1xx_hal_uart.o"
+"irq_uart\stm32f1xx_hal.o"
+"irq_uart\stm32f1xx_hal_rcc.o"
+"irq_uart\stm32f1xx_hal_rcc_ex.o"
+"irq_uart\stm32f1xx_hal_gpio.o"
+"irq_uart\stm32f1xx_hal_dma.o"
+"irq_uart\stm32f1xx_hal_cortex.o"
+"irq_uart\stm32f1xx_hal_pwr.o"
+"irq_uart\stm32f1xx_hal_flash.o"
+"irq_uart\stm32f1xx_hal_flash_ex.o"
+"irq_uart\stm32f1xx_hal_exti.o"
+"irq_uart\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "IRQ_UART\IRQ_UART.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IRQ_UART.map" -o IRQ_UART\IRQ_UART.axf
